@@ -1,0 +1,32 @@
+.shop_container{
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+}
+.product_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.product{
+   position: relative;
+    padding-top: 50px;
+    background-color: bisque;
+    letter-spacing: 2px;
+    line-height: 20px;
+    height: 350px;
+}
+.product img{
+    height: 200px;
+    width: 300px;
+}
+.button_style{
+    position: absolute;
+    bottom: 0;
+    padding: 10px 20px;
+    background: rgb(255 224 179);
+    border: 1px solid rgb(149 160 167);
+    box-sizing: border-box;
+    border-radius: 0px 0px 8px 8px;
+
+}
