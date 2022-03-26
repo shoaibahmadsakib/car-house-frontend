@@ -2,8 +2,8 @@ import React from "react";
 import "./Product.css";
 
 function Product(props) {
-  const {handleAddToCart,mydata} = props
-  const { name, price, picture } = mydata;
+  const {handleAddToCart,product} = props
+  const { name, price, picture } = product;
 
 
   return (
@@ -12,7 +12,7 @@ function Product(props) {
       <h2>{name}</h2>
       <p>{price}</p>
       <div>
-      <button onClick={()=>handleAddToCart()} className="button_style">Add to cart</button>
+      <button onClick={()=>handleAddToCart(product)} className="button_style">Add to cart</button>
       </div>
     
     </div>
