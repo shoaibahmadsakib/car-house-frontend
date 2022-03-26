@@ -2,3 +2,26 @@
     position: sticky;
     top: 0;
 }
+.cart_display{
+    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    grid-gap: 20px;
+    background-color: rgb(132 121 225);
+    margin-bottom: 20px;
+    margin: 20px;
+    color: rgb(255 255 255);
+}
+.cart_button_style button{
+    color: rgb(255 255 255);
+    background-color: rgb(0 0 0);
+    width: auto;
+    padding: 13px;
+    margin: 10px;
+    border-radius: 6px;
+    border: none;
+    box-shadow: 0px 5px 3px #7e7676;
+
+}

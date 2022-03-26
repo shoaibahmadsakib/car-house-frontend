@@ -6,7 +6,7 @@ function Header() {
     <div className='Heder_style'>
         <div className="nav">
             <div className="logo">
-                <h1>Car House</h1>
+                <h1>CAR HOUSE</h1>
             </div>
             <div className="nav_bar">
                 <div>Home</div>

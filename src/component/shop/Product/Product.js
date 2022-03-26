@@ -13,7 +13,7 @@ function Product(props) {
       <img src={picture} alt="" />
       <h2> Name:{name}</h2>
       <p>price:${price}</p>
-      <div>
+     
         <button
           onClick={() => handleAddToCart(product)}
           className="button_style">
@@ -21,7 +21,7 @@ function Product(props) {
           <FontAwesomeIcon className="icon_style" icon={faShoppingBag} />
         </button>
       
-      </div>
+   
     </div>
   );
 }

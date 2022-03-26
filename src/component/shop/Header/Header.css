@@ -1,7 +1,7 @@
 .Heder_style{
     height: 100px;
-    background-color: black;
-    color: white;
+    background-color: rgb(132 121 225);
+    color: rgb(255 255 255);
 }
 .nav{
     display: flex;
