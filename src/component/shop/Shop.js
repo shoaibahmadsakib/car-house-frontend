@@ -17,6 +17,18 @@ const Shop = () => {
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
+  const handleClick = () => {
+    setCart([])
+  };
+
+  const randomClick =()=>{
+  const randomNumber =   Math.floor(Math.random()*cart.length);
+  console.log(randomNumber);
+   const finalSuggest =  cart.find((products, index) => index === randomNumber)
+  setCart([finalSuggest])
+  }
+
+  // array.find((product, index) => index === randomNumber)
   return (
     <div className="shop_container">
       <div className="product_container">
@@ -29,7 +41,10 @@ const Shop = () => {
         ))}
       </div>
       <div className="cart_container">
-        <Cart cart ={cart}></Cart>
+        <Cart cart ={cart} 
+        randomClick={randomClick}
+        handleClick={handleClick}
+        ></Cart>
       </div>
     </div>
   );
