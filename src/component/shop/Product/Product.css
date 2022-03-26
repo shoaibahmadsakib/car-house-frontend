@@ -30,3 +30,23 @@
     border-radius: 0px 0px 8px 8px;
 
 }
+
+.icon_style{
+    padding-left:10px ;
+}
+
+@media only screen and (max-width: 600px) {
+    .cart_container{
+        display: flex;
+
+        position: sticky;
+        top: 0px;
+    }
+    .shop_container{
+        grid-template-columns: 1fr;
+    }
+    .product_container {
+    
+      grid-template-columns: 1fr;
+    }
+  }
